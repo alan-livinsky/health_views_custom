@@ -6,10 +6,7 @@ class HealthProfessional(metaclass=PoolMeta):
     __name__ = 'gnuhealth.healthprofessional'
 
     is_doctor_display = fields.Function(
-        fields.Selection([
-            ('si', 'Si'),
-            ('no', 'No'),
-        ], 'Es un medico?', sort=False),
+        fields.Char('Es un medico?'),
         'get_is_doctor_display'
     )
 
