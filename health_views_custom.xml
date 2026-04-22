@@ -3,6 +3,7 @@
     <data>
         <record model="ir.ui.view" id="gnuhealth_healthprofessional_view_tree_inherit">
             <field name="model">gnuhealth.healthprofessional</field>
+            <field name="type">tree</field>
             <field name="inherit" ref="health.gnuhealth_healthprofessional_tree"/>
             <field name="name">gnuhealth_healthprofessional_tree</field>
         </record>
