@@ -2,6 +2,6 @@
 <data>
     <xpath expr="/tree/field[@name='name']" position="after">
         <field name="main_specialty" string="Especialidad principal"/>
-        <field name="es_medico" string="Es medico?"/>
+        <field name="is_healthprof" string="Es medico?"/>
     </xpath>
 </data>

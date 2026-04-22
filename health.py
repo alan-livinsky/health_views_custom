@@ -5,12 +5,12 @@ from trytond.pool import PoolMeta
 class HealthProfessional(metaclass=PoolMeta):
     __name__ = 'gnuhealth.healthprofessional'
 
-    es_medico = fields.Function(
-        fields.Boolean('Es medico'),
-        'get_es_medico'
+    is_healthprof = fields.Function(
+        fields.Boolean('Health Prof'),
+        'get_is_healthprof'
     )
 
-    def get_es_medico(self, name):
+    def get_is_healthprof(self, name):
         if self.name:
             return bool(self.name.is_healthprof)
         return False
